@@ -17,9 +17,33 @@ print(names)
 ```
 > Output: [1] "name1" "name2" "name3" "name4"
 
-Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
+#### Checking if `names` is a vector
+```{r}
+is.vector(names)
+```
+> [1] TRUE
 
-When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file). 
+#### Integer Vector
+```{r}
+squares <- c(1,4,9,16)
+print(squares)
+```
+> [1]  1  4  9 16 25
 
-The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+#### Assigning names to Vector elements
+```{r}
+vector_with_names <- c( a = 1, b = 2, c = 3, d = 4)
+print(vector_with_names)
+```
+> a | b | c | d
 
+> 1 | 2 | 3 | 4
+
+#### Assigning names to Vector elements/Combining 2 vectors
+```{r}
+names(squares) <- names
+print(squares)
+```
+> name1 | name2 |  name3 | name4 
+
+>    1  |   4   |    9   |    16 
