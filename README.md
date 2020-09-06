@@ -1,2 +1,3 @@
-# r-data-structure-concepts
-Data Structures | Concepts - regex
+#### R Markdown vs Notebooks
+![](./extra/images/md-vs-notebook.png)
+
